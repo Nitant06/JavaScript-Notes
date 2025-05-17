@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>setTimeout() </h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayName = function(){
+        console.log("Nitant");
+    }
+    const changeText = function(msg){
+        if(msg===undefined){
+            msg = "setTimeout() is running for 2 secs"
+            document.querySelector('h1').innerHTML = `${msg}`
+        }else{
+            document.querySelector('h1').innerHTML = `${msg}`
+        }
+    }
+
+    const changeMe = setTimeout(changeText, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        changeText("setTimeout() stopped running")
+        
+    })
+</script>
+</html>
