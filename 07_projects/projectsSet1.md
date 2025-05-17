@@ -72,3 +72,17 @@ form.addEventListener('submit', function (e) {
 });
 
 ```
+
+## Project 3
+
+```
+console.log("Digital Clock")
+
+const clock = document.getElementById('clock');
+
+setInterval(function(){
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+},1000);
+
+```
