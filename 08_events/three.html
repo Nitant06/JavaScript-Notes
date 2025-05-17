@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">setInterval() in Javascript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayStrDate = function(str){
+        let h1 = document.querySelector('.heading');
+        h1.innerHTML=`${str}`+" "+Date.now()
+    }
+
+    let intervalId;
+ 
+    document.querySelector('#start').addEventListener('click',function(){
+        intervalId = setInterval(sayStrDate, 1000, "setInterval() started")
+    })
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearInterval(intervalId)
+        sayStrDate("setInterval() stopped")
+    })
+</script>
+</html>
