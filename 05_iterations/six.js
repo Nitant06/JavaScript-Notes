@@ -8,6 +8,8 @@
 
 // console.log(values);
 
+// foreach() method cannot return a value so we can use filter() method 
+
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNums.filter( (num) => {
