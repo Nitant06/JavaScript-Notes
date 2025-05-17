@@ -46,8 +46,8 @@ buttons.forEach(function (button) {
 
 ## Project 2 
 
-```
-console.log("BMI Calculator);
+```javascript
+console.log("BMI Calculator");
 
 const form = document.querySelector('form');
 // this usecase will give you empty
@@ -75,8 +75,8 @@ form.addEventListener('submit', function (e) {
 
 ## Project 3
 
-```
-console.log("Digital Clock")
+```javascript
+console.log("Digital Clock");
 
 const clock = document.getElementById('clock');
 
